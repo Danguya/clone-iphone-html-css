@@ -1,0 +1,187 @@
+body{
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.iphone{
+    background-color: black;
+    height: 600px;
+    min-width: 320px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin-left: 22px;
+}
+
+.screen{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    min-width: 288px;
+    height: 580px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topbar{
+    background-color: black;
+    height: 25px;
+    width: 63%;
+    margin: 0 auto;
+    border-radius: 0 0 13px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonBar{
+    background-color: white;
+    width: 40%;
+    height: 5px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    margin: auto auto 10px auto;
+
+}
+.camera{
+    background-color: rgba(56, 56, 56, 0.829);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.buttonLock{
+    width: 240px;
+    height: 40px;
+    margin-bottom: 25px;
+    margin: auto auto -210px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.buttonLock div{
+    background-color: #00000063;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/*BACK*/
+.back-iphone {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+.apple{
+    width: 60px;
+    height: 60px;
+    background-color: var(--black-opacity);
+    position: absolute;
+    border-radius: 30% 30% 45% 45% / 42% 42% 75% 75%;
+    top: 150px;
+}
+.apple::before{
+    background-color: var(--black-opacity);
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin: -26px 0 0 28px;
+    border-radius: 100px 0;
+    z-index: 5;
+}
+
+.apple:after{
+    background-color: currentColor;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 1px 0 0 46px;
+    border-radius: 50%;
+    transform: rotate(-6deg);
+    z-index: 4;
+    box-shadow: -27px -29.5px 0 currentColor, -36px 50px 0 currentColor;
+}
+.bottom-text{
+    color: var(--black-opacity);
+    position: absolute;
+    bottom: 150px;
+}
+
+.back-camera{
+    background-color: black;
+    height: 100px;
+    width: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px grey;
+    margin-top: -454px;
+    margin-left: -230px;
+}
+.back-camera div{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin: 0 0px 6px 0;
+    
+    border-radius: 50%;
+}
+.back-camera div:first-child{
+    background-color: rgba(56, 56, 56, 0.829);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.back-camera div:last-child{
+    background-color: rgba(56, 56, 56, 0.829);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+.content{
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 0;
+}
+.avatar{
+    background-image: url('../images/avatar.jpg');
+    background-color: white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
+}
+:root{
+    --black-opacity: #808080;
+}
